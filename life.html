@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/life.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul id="nav_bar">
+                <li class="nav_item"><a href="songs.html">Songs</a></li>
+                <li class="nav_item"><a href="life.html">Life</a></li>
+                <li class="nav_item"><a href="about_us.html">About Us</a></li>
+                <li class="nav_item"><a href="fans.html">Fans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="skip">
+        <div id="timeline">
+            <div id="first_img">
+                <img src="images/life_1.jpeg" alt="Baby picture of the Weeknd.">
+            </div>
+            <div id = "first_text">
+                <h3>Birth</h3>
+                <p>
+                    Born on February 16, 1990
+                </p>
+            </div>
+
+
+            <div id="second_img">
+                <img src="images/life_2.jpeg" alt="Video picture of one of the Weeknd's first songs.">
+                
+            </div>
+            <div id="second_text">
+                <h3>First Upload</h3>
+                <p>
+                    Uploaded "Loft Music", "What You Need", and "The Morning" on Youtube in December 2010 with the username "xoxxxoooxo"
+                 </p>
+            </div>
+
+
+            <div id="third_img">
+                <img src="images/life_3.png" alt="Album cover art of the Weeknd's Trilogy">
+            </div>
+            <div id="third_text">
+                <h3>First Album</h3>
+                <p>
+                    Released "Trilogy" which became #4 on the Billboards in 2012     
+                </p>
+            </div>
+            
+
+            <div id="fourth_img">
+                <img src="images/life_4.jpeg" alt="Kiss Land album cover!">     
+            </div>
+            <div id="fourth_text">
+                <h3>Kiss Land</h3>
+                <p>
+                    In 2013, released his album "Kiss Land" which reached #2 on the U.S. Billboard 200, and he sold 273,000 copies of the album
+                </p>
+            </div>
+
+
+            <div id="fifth_img">
+                <img src="images/life_5.jpeg" alt="Remixed Drunk in Love with Rihanna cover art">
+            </div>
+            <div id="fifth_text">
+                <h3>Collabs</h3>
+                <p>
+                    Remixed "Drunk in Love" with Rihanna in 2014, duetted Arianna Grande for "Love Me Harder", realeased a song for Fifty Shades of Grey titled "Earned It"    
+                </p>
+            </div>
+
+            <div id="sixth_img">
+                <img src="images/life_6.jpeg" alt="The Weeknd earning an award.">
+            </div>
+            <div id="sixth_text">
+                <h3>Centric Award</h3>
+                <p>
+                    Won a Centric Award in 2015 for his song "Earned It", which he performed with Alicia Keys     
+                </p>
+            </div>
+
+
+            <div id="seventh_img">
+                <img src="images/life_7.jpeg" alt="Starboy album cover art.">
+            </div>
+            <div id="seventh_text">
+                <h3>Starboy</h3>
+                <p>
+                    In 2016, released "Starboy", an album that remained at #1 on U.S. Billoards 200 for quite a while.    
+                </p>
+            </div>
+
+
+            <div id="eighth_img">
+                <img src="images/life_8.jpeg" alt="The Weeknd kissing his Grammy award">
+            </div>
+            <div id="eighth_text">
+                <h3>Grammy Award</h3>
+                <p>
+                    Received a Grammy nomiation for the 60th Annual Grammy for Best Urban Contemporary Album for his album "Starboy" in 2017 (and won!).
+                </p>
+            </div>
+
+
+            <div id="ninth_img">
+                <img src="images/life_9.jpeg" alt="After Hours cover art.">
+            </div>
+            <div id="ninth_text">
+                <h3>After Hours Til Dawn</h3>
+                <p>
+                    In 2022, went on tour for two combined albums "After Hours" and "Dawn FM" after pushing back his tour earlier in the year    
+                </p>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="main">
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/theweeknd/" class="fa fa-facebook"></a>
+            </li>
+            <li class="icon twitter">
+                <a href="https://twitter.com/theweeknd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+            </li>
+            <li class="icon instagram">
+                <a href="https://www.instagram.com/theweeknd/?hl=en" class="fa fa-instagram"></a>
+            </li>
+            <li class="icon youtube">
+                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" class="fa fa-youtube"></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

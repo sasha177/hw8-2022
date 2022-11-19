@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/about_us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul id="nav_bar">
+                <li class="nav_item"><a href="songs.html">Songs</a></li>
+                <li class="nav_item"><a href="life.html">Life</a></li>
+                <li class="nav_item"><a href="about_us.html">About Us</a></li>
+                <li class="nav_item"><a href="fans.html">Fans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="skip">
+        <img src="images/about_us_1.jpg" alt="Sasha and Vishu having a good time together!" id="pic_tog">
+        <div>
+            <p>
+                Our Names are Sasha and Vishu and we are the biggest Weeknd fans out there!
+            </p>
+        </div>
+    </main>
+
+    <footer class="main">
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <a href="https://www.facebook.com/theweeknd/" class="fa fa-facebook"></a>
+            </li>
+            <li class="icon twitter">
+                <a href="https://twitter.com/theweeknd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+            </li>
+            <li class="icon instagram">
+                <a href="https://www.instagram.com/theweeknd/?hl=en" class="fa fa-instagram"></a>
+            </li>
+            <li class="icon youtube">
+                <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" class="fa fa-youtube"></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
